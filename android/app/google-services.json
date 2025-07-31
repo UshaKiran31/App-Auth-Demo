@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597321369022",
+    "project_id": "jr-csp",
+    "storage_bucket": "jr-csp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597321369022:android:cbf39a0890840e925f25ef",
+        "android_client_info": {
+          "package_name": "com.example.csp_jr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1uL3swWgF5sDLlk9txIqSG6uotbCuUrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
