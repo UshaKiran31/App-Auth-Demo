@@ -11,7 +11,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _counter = 0;
   String _userName = '';
 
   @override
@@ -34,12 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
         });
       }
     }
-  }
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
   }
 
   Future<void> _logout() async {
@@ -98,26 +91,23 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const SizedBox(height: 40),
-            const Text(
-              'You have pushed the button this many times:',
-              style: TextStyle(fontSize: 16),
-            ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                color: Colors.blue.shade800,
-                fontWeight: FontWeight.bold,
+              'You have successfully logged in!',
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.grey.shade600,
+              ),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              'This is your personalized dashboard.',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey.shade500,
               ),
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        backgroundColor: Colors.blue.shade800,
-        foregroundColor: Colors.white,
-        child: const Icon(Icons.add),
       ),
     );
   }
